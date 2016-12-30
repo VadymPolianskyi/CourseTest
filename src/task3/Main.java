@@ -14,7 +14,5 @@ public class Main {
         NumbersFromString numbersFromString = new NumbersFromString();
         System.out.println("Результат:");
         numbersFromString.print(inputStr);
-
-        System.out.println("Завдання 4");
     }
 }
