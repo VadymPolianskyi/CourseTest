@@ -1,3 +1,5 @@
+package task2;
+
 public class Polynomial {
     public String process;
     public int multiplier = 4;
