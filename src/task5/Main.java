@@ -10,7 +10,7 @@ public class Main {
         exit = false;
         System.out.println("Welcome!");
         functionManager.printComands();
-
+//      this program has four comands:
         while (true) {
             System.out.println("\nEnter your comand:");
             String comand = in.nextLine();

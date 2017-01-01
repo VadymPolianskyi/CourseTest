@@ -7,6 +7,8 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
     public abstract double getWage();
     public abstract int getId();
 
+
+//   compare employees to sorting
     @Override
     public int compareTo(Employee employee) throws ClassCastException {
         if (!(employee instanceof Employee))
@@ -15,6 +17,7 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
         double wage = employee.getWage();
 
         if (wage == ownWage) {
+//   if wages are identical we compare to names
             String employeeName1 = getName().toUpperCase();
             String employeeName2 = employee.getName().toUpperCase();
 

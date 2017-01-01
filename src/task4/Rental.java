@@ -2,7 +2,8 @@ package task4;
 
 class Rental {
 
-    private int kind;
+    private Kind kind;
+//
 
     private int days;
 
@@ -10,53 +11,35 @@ class Rental {
 
 // Other fields, constructors, get, set, etc. //
 
-    public Rental(int kind, int days, double basePrice) {
-
+    public Rental(Kind kind, int days, double basePrice) {
         this.kind=kind;
-
         this.days=days;
-
         this.basePrice = basePrice;
-
     }
 
-    public int getKind() {
-
+    public Kind getKind() {
         return kind;
-
     }
 
-    public void setKind(int kind) {
-
+    public void setKind(Kind kind) {
         this.kind=kind;
-
     }
-
-
 
     public int getDays() {
-
         return days;
-
     }
 
     public void setDays(int days) {
-
         this.days=days;
-
     }
 
     public double getBasePrice() {
-
 // Calculation of Price.
     return basePrice;
 // . . .
-
     }
 
-
     private double amountFor(Rental rental) {
-
         double result;
 
 
@@ -66,13 +49,13 @@ class Rental {
         result=days*getBasePrice();
 
         switch (kind) {
-            case 1:
+            case WEEKLY:
                 result *= 1.5;
                 break;
-            case 2:
+            case DAILY:
                 result *= 2;
                 break;
-            case 3:
+            case HOURLY:
                 result *= 2.5;
                 break;
             default:
@@ -81,7 +64,6 @@ class Rental {
 // Other calculation.
 
         return result;
-
     }
 
 // Other methods.

@@ -4,11 +4,12 @@ import java.io.*;
 import java.util.List;
 
 public class FileManager {
+//    work with file "employees.txt"
 
     private static String fileName = "employees.txt";
 
     public static void writeEmployeeToFile(List<Employee> employees) {
-
+//        writing list of "employees" to file
         try {
             FileOutputStream fo = new FileOutputStream(fileName);
             ObjectOutputStream serial = new ObjectOutputStream(fo);
@@ -21,6 +22,7 @@ public class FileManager {
     }
 
     public static List<Employee> readEmployeesFromFile() {
+//        reading list of "employees" from file
         try {
             FileInputStream bais = new FileInputStream(fileName);
             ObjectInputStream ois = new ObjectInputStream(bais);

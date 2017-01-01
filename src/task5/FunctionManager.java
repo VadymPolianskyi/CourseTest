@@ -8,9 +8,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class FunctionManager {
+//    there are main function to client
     Scanner in;
     boolean mounthWageCheck;
 
+//    client write parameters and add these to file
     public void add() {
         try {
             Employee employee;
@@ -30,6 +32,7 @@ public class FunctionManager {
         }
 
     }
+
 
     public int writeID() throws IncorrectFormatException {
         try{
@@ -55,6 +58,7 @@ public class FunctionManager {
         }
     }
 
+//    there is two kind of wage. So we must know it
     public double writeAndCheckWage() throws IncorrectFormatException {
         try{
             in = new Scanner(System.in);
@@ -118,6 +122,7 @@ public class FunctionManager {
         return wage;
     }
 
+//    get list of employees from file -> sort list -> print
     public void sortEmploye() {
         List<Employee> employees = FileManager.readEmployeesFromFile();
         Collections.sort(employees);

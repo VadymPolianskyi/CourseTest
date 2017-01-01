@@ -2,12 +2,13 @@ package task5;
 
 
 public class EmployeeHourWage extends Employee {
-
+// this's object of employee with hourly wage
     private int id;
     private String name;
     private double hourlyRate;
 
     public EmployeeHourWage( int id, String name, double hourlyRate) {
+        this.id = id;
         this.name = name;
         this.hourlyRate = hourlyRate;
     }

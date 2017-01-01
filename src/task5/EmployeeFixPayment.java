@@ -2,7 +2,7 @@ package task5;
 
 
 public class EmployeeFixPayment extends Employee {
-
+// this's object of employee with fixed payment
     private int id;
     private String name;
     private double fixedWage;
