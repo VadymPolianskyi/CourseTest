@@ -1,6 +1,5 @@
 package task5;
 
-
 public class EmployeeHourWage extends Employee {
 // this's object of employee with hourly wage
     private int id;

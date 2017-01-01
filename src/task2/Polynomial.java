@@ -85,6 +85,5 @@ public class Polynomial {
 
     public void printResult() {
         System.out.println(process + " = " + result + "\n");
-
     }
 }

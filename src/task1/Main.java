@@ -3,9 +3,6 @@ package task1;
 import java.util.Arrays;
 import java.util.Scanner;
 
-/**
- * Created by vadym on 31.12.16.
- */
 public class Main {
     public static void main(String[] args) {
         System.out.println("Завдання 1");
@@ -16,6 +13,5 @@ public class Main {
         int num = in.nextInt();
         System.out.println("Вигляд ряду:");
         System.out.println(Arrays.toString(pascalsTriangle.rowN(num)) + "\n");
-
     }
 }

@@ -2,9 +2,6 @@ package task2;
 
 import java.util.Scanner;
 
-/**
- * Created by vadym on 31.12.16.
- */
 public class Main {
     public static void main(String[] args) {
         System.out.println("Завдання 2");

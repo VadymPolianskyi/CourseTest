@@ -7,7 +7,6 @@ class Rental {
 // because kind = 1, = 2, = 3 - what does it mean? Is it magic numbers?))
 
     private int days;
-
     private double basePrice;
 
 //  I have added WEEK to good redability of code
@@ -48,9 +47,7 @@ class Rental {
     private double amountFor(Rental rental) {
         double result;
 
-
 // Another code.
-
 
         result=days*getBasePrice();
 

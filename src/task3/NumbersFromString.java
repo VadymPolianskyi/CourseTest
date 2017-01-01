@@ -35,7 +35,6 @@ public class NumbersFromString {
             if (number < min) min = number;
 
             System.out.println(number);
-
         }
         System.out.println("Max: " + max);
         System.out.println("Min: " + min);

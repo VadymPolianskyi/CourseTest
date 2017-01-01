@@ -26,7 +26,6 @@ public class PascalsTriangle {
         return null;
     }
 
-
     public void printZeroRow() {
         System.out.println(1);
     }
@@ -39,10 +38,7 @@ public class PascalsTriangle {
             } else {
                 nextRow[i] = row[i-1] + row[i];
             }
-
-
         }
-
         return nextRow;
     }
 }
